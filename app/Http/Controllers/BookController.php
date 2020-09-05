@@ -40,7 +40,7 @@ class BookController extends Controller
 
             $title = $request->input('title');
             $description = $request->input('description');
-            $author = $request->input('author');
+            // $author = $request->input('author');
             $publisher = $request->input('publisher');
             $dates = $request->input('date_of_issue');
 
@@ -48,7 +48,7 @@ class BookController extends Controller
             $data = new \App\Book();
             $data->title = $title;
             $data->description = $description;
-            $data->author = $author;
+            // $data->author = $author;
             $data->publisher = $publisher;
             $data->date_of_issue = $dates;
 
@@ -106,7 +106,7 @@ class BookController extends Controller
 
                 $title = $request->input('title');
                 $description = $request->input('description');
-                $author = $request->input('author');
+                // $author = $request->input('author');
                 $publisher = $request->input('publisher');
                 $dates = $request->input('date_of_issue');
 
@@ -114,7 +114,7 @@ class BookController extends Controller
                 $data = \App\Book::where('id',$id)->first();
                 $data->title = $title;
                 $data->description = $description;
-                $data->author = $author;
+                // $data->author = $author;
                 $data->publisher = $publisher;
                 $data->date_of_issue = $dates;
 
